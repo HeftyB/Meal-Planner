@@ -1,0 +1,28 @@
+{
+    "recipieid": 49,
+    "recipename": "2XL . Beef Stew",
+    "description": "2XXL . A delicious old time stew",
+    "directions": [
+        {
+            "direction": {
+                "directionid": 36,
+                "direction": "2XL . Combine the flour and pepper in a bowl, add the beef and toss to coat well."
+            },
+            "stepnum": 1
+        }
+    ],
+    "ingredients": [
+        {
+            "ingredient": {
+                "ingredientid": 22,
+                "name": "Red Wine Vinegar",
+                "description": null,
+                "category": {
+                    "categoryid": 15,
+                    "name": "Pantry"
+                }
+            },
+            "qty": "2 tbsp"
+        },
+    ]
+},
