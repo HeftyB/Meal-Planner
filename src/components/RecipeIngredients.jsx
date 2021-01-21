@@ -74,9 +74,9 @@ const RecipeIngredients = ({ addRecipeForm, setFormValues, ingredients }) => {
       ></Input>
 
       <Button onClick={() => {
-          // setFormValues({
-          //     ...addRecipeForm, ingredients: {...ingredients, recipeIngredient}
-          // });
+          setFormValues({
+              ...addRecipeForm, ingredients: {...ingredients, recipeIngredient}
+          });
           // setRecipeIngredient({
           //     ingredient: {},
           //     qty: "",

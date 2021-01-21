@@ -25,7 +25,7 @@ export const getData = (links) => dispatch => {
         })
 }
 
-export const addIngredientToForm
+// export const addIngredientToForm
 
 //LOGIN
 
