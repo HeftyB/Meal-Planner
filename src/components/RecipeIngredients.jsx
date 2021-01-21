@@ -25,7 +25,7 @@ const RecipeIngredients = ({ addRecipeForm, setFormValues, ingredients }) => {
           </tr>
         </thead>
         <tbody>
-          {recIngredients.map((ingredient) => {
+          {recipeIngredient ? recIngredients.map((ingredient) => {
             counter++;
             return (
               <tr>
@@ -35,7 +35,12 @@ const RecipeIngredients = ({ addRecipeForm, setFormValues, ingredients }) => {
                 <td>{ingredient.ingredient.category.name}</td>
               </tr>
             );
-          })}
+          }) : <tr>
+              <th scope="row">0</th>
+              <td>....Loading</td>
+              <td>....</td>
+              <td>....</td>
+          </tr>}
         </tbody>
       </Table>
 
@@ -68,7 +73,15 @@ const RecipeIngredients = ({ addRecipeForm, setFormValues, ingredients }) => {
         }}
       ></Input>
 
-      <Button onClick={() => {}}>Submit</Button>
+      <Button onClick={() => {
+          setFormValues({
+              ...addRecipeForm, ingredients: {...ingredients, recipeIngredient}
+          });
+          // setRecipeIngredient({
+          //     ingredient: {},
+          //     qty: "",
+          // });
+      }}>Submit</Button> // TODO finish submit action -- redux???
       
     </div>
   );
